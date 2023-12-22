@@ -1,0 +1,16 @@
+MODEL 1
+REMARK minimizedAffinity -2.51050115
+REMARK minimizedRMSD -1
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+ROOT
+ATOM      1  C   UNL d   1      -4.315   1.558   1.212  0.00  0.00     0.023 A 
+ATOM      2  C1  UNL d   1      -3.208   1.748   2.039  0.00  0.00     0.003 A 
+ATOM      3  C2  UNL d   1      -1.936   1.375   1.601  0.00  0.00     0.048 A 
+ATOM      4  C3  UNL d   1      -1.777   0.815   0.334  0.00  0.00     0.023 A 
+ATOM      5  C4  UNL d   1      -2.882   0.624  -0.498  0.00  0.00     0.048 A 
+ATOM      6  C5  UNL d   1      -4.153   0.997  -0.055  0.00  0.00     0.003 A 
+ATOM      7  I   UNL d   1       0.115   0.260  -0.321  0.00  0.00    -0.146 I 
+ENDROOT
+TORSDOF 0
+ENDMDL
