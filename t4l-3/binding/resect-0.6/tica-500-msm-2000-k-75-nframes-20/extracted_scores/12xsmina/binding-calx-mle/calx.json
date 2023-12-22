@@ -1,0 +1,195 @@
+{
+    "log": {
+        "command line": [
+            [
+                "/home/lgsmith/raid/software/MSM-docking/msm_binder.py",
+                "-n",
+                "8",
+                "--reweighted-eq",
+                "--out",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/binding-calx-mle",
+                "bin-samples",
+                "t4l-3/models/bb-all-chis-pocket-resect-0.6/tica-500-msm-2000/75-clusters/mle/eq-probs.npy",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/1_2-dichlorobenzene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/1-methylpyrrole.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/2-ethyltoluene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/3-ethyltoluene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/4-ethyltoluene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/benzene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/benzofuran.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/ethylbenzene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/indene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/indole.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/iodobenzene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/iodopentafluorobenzene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/isobutylbenzene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/m-xylene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/n-butylbenzene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/N-methylaniline.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/o-xylene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/phenol.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/propylbenzene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/p-xylene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/thianaphthene.h5",
+                "t4l-3/binding/resect-0.6/tica-500-msm-2000-k-75-nframes-20/extracted_scores/12xsmina/toluene.h5"
+            ]
+        ],
+        "rt": 0.6160333201786573
+    },
+    "results": {
+        "1_2-dichlorobenzene": {
+            "msm dG": -3.6520259827538517,
+            "msm K_D": 2663.0240530104747,
+            "weighted avg": 3.6250055778961805,
+            "simple avg": 1.6010905504226685,
+            "best score": -6.088217258453369
+        },
+        "1-methylpyrrole": {
+            "msm dG": -2.6732955081584238,
+            "msm K_D": 13042.647618003066,
+            "weighted avg": 0.5967964194806262,
+            "simple avg": -0.3849162459373474,
+            "best score": -4.371002674102783
+        },
+        "2-ethyltoluene": {
+            "msm dG": -4.144498566129134,
+            "msm K_D": 1197.2617824504107,
+            "weighted avg": 4.16734419574507,
+            "simple avg": 1.8850797414779663,
+            "best score": -6.964737415313721
+        },
+        "3-ethyltoluene": {
+            "msm dG": -4.176191222159314,
+            "msm K_D": 1137.2246394343879,
+            "weighted avg": 3.4111541323411174,
+            "simple avg": 1.344801664352417,
+            "best score": -7.159470558166504
+        },
+        "4-ethyltoluene": {
+            "msm dG": -4.125544715350833,
+            "msm K_D": 1234.6711699479383,
+            "weighted avg": 3.9270200111532305,
+            "simple avg": 1.7479641437530518,
+            "best score": -6.979728698730469
+        },
+        "benzene": {
+            "msm dG": -3.6220846905530015,
+            "msm K_D": 2795.652980719319,
+            "weighted avg": 0.2728384314020988,
+            "simple avg": -0.7887340784072876,
+            "best score": -5.657227993011475
+        },
+        "benzofuran": {
+            "msm dG": -4.247507982177059,
+            "msm K_D": 1012.9056363491818,
+            "weighted avg": 3.8522343777293706,
+            "simple avg": 1.7043551206588745,
+            "best score": -6.915964603424072
+        },
+        "ethylbenzene": {
+            "msm dG": -4.24860974399765,
+            "msm K_D": 1011.0956962650606,
+            "weighted avg": 1.8337042891679391,
+            "simple avg": 0.13004915416240692,
+            "best score": -6.526478290557861
+        },
+        "indene": {
+            "msm dG": -4.624009188747621,
+            "msm K_D": 549.7195003410588,
+            "weighted avg": 4.122311860582127,
+            "simple avg": 1.8740167617797852,
+            "best score": -7.593193054199219
+        },
+        "indole": {
+            "msm dG": -4.146485247075568,
+            "msm K_D": 1193.4068840082698,
+            "weighted avg": 4.1405613361466695,
+            "simple avg": 1.9558119773864746,
+            "best score": -6.903846263885498
+        },
+        "iodobenzene": {
+            "msm dG": -3.3360475668555347,
+            "msm K_D": 4447.6975966108075,
+            "weighted avg": 3.216563747662854,
+            "simple avg": 1.5099990367889404,
+            "best score": -5.9592485427856445
+        },
+        "iodopentafluorobenzene": {
+            "msm dG": -3.077666578586521,
+            "msm K_D": 6765.346888422456,
+            "weighted avg": 10.289771131321388,
+            "simple avg": 7.000153064727783,
+            "best score": -6.7528977394104
+        },
+        "isobutylbenzene": {
+            "msm dG": -4.342157110624344,
+            "msm K_D": 868.6458244846399,
+            "weighted avg": 4.5551490834570405,
+            "simple avg": 2.164763927459717,
+            "best score": -7.105145454406738
+        },
+        "m-xylene": {
+            "msm dG": -4.006622658145927,
+            "msm K_D": 1497.5785760524461,
+            "weighted avg": 2.899649779460435,
+            "simple avg": 0.9247265458106995,
+            "best score": -6.870965003967285
+        },
+        "n-butylbenzene": {
+            "msm dG": -4.7297916195268925,
+            "msm K_D": 462.984099773932,
+            "weighted avg": 3.453643040524126,
+            "simple avg": 1.060335397720337,
+            "best score": -7.223936557769775
+        },
+        "N-methylaniline": {
+            "msm dG": -3.6541251178355054,
+            "msm K_D": 2653.965234617444,
+            "weighted avg": 2.3286437853512707,
+            "simple avg": 0.5850761532783508,
+            "best score": -5.897196292877197
+        },
+        "o-xylene": {
+            "msm dG": -4.140818854556304,
+            "msm K_D": 1204.434709473782,
+            "weighted avg": 3.3447151111395628,
+            "simple avg": 1.3160648345947266,
+            "best score": -6.676283359527588
+        },
+        "phenol": {
+            "msm dG": -3.814379735747939,
+            "msm K_D": 2046.0585978838556,
+            "weighted avg": 0.8796525184090866,
+            "simple avg": -0.4406594932079315,
+            "best score": -5.880955219268799
+        },
+        "propylbenzene": {
+            "msm dG": -4.486410214008411,
+            "msm K_D": 687.3001014808921,
+            "weighted avg": 2.599981335757249,
+            "simple avg": 0.65289306640625,
+            "best score": -6.8203511238098145
+        },
+        "p-xylene": {
+            "msm dG": -3.9418456849732233,
+            "msm K_D": 1663.6288278257061,
+            "weighted avg": 3.1675331074492306,
+            "simple avg": 1.0464202165603638,
+            "best score": -6.644970893859863
+        },
+        "thianaphthene": {
+            "msm dG": -3.4857997290681304,
+            "msm K_D": 3487.885078798743,
+            "weighted avg": 6.2587896467358926,
+            "simple avg": 3.75028133392334,
+            "best score": -6.572198390960693
+        },
+        "toluene": {
+            "msm dG": -4.1224024969833275,
+            "msm K_D": 1240.984980505672,
+            "weighted avg": 1.0751068633295915,
+            "simple avg": -0.39391830563545227,
+            "best score": -6.267616271972656
+        }
+    }
+}
