@@ -1,5 +1,5 @@
 import numpy as np
-from scipy.stats import gaussian_kde, spearmanr, distributions
+from scipy.stats import gaussian_kde, spearmanr, distributions, pearsonr
 from pathlib import Path
 import matplotlib.pyplot as plt
 
@@ -55,7 +55,7 @@ def compare_extrema(extrema_A, extrema_B):
 
 
 def plot_scatter(ref_log, deriv_log, ax: plt.axis, yerr=None, xerr=None, xlabel=None, ylabel=None, title=None, include_corr=False,
-                 include_rmse=False, include_rho=True, corrfmt='Corr. {:.3f}', delta_guides=1.2, ax_pad=0.5,
+                 include_rmse=False, include_rho=True, corrfmt='Corr. {:.3f} (p={:.3f})', delta_guides=1.2, ax_pad=0.5,
                  pointsize=8, pointshape='o', datalabel=None):
     one_one_x = np.array([min(ref_log.min(), deriv_log.min())-ax_pad,
                           max(deriv_log.max(), ref_log.max())+ax_pad])
@@ -69,11 +69,15 @@ def plot_scatter(ref_log, deriv_log, ax: plt.axis, yerr=None, xerr=None, xlabel=
         ax.set_ylabel(ylabel)
     if title:
         if include_corr:
-            corr = np.corrcoef(x, y)
-            title += corrfmt.format(corr[0, 1])
+            res = pearsonr(x, y)
+            corr = np.corrcoef(x, y)[0,1]
+            pval = res.pvalue
+            title += corrfmt.format(corr, pval)
         if include_rho:
-            rho = spearmanr(x, y).correlation
-            title += ', Rho {:.3f}'.format(rho)
+            res = spearmanr(x, y)
+            rho = res.correlation
+            rpval = res.pvalue
+            title += ', Rho {:.3f} (p={:.3f})'.format(rho, rpval)
         if include_rmse:
             rmse = np.sqrt(np.mean((x - y)**2))
             title += ', RMSE {:.2f}'.format(float(rmse))
