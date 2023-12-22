@@ -1,0 +1,18 @@
+MODEL 1
+REMARK minimizedAffinity -0.495173782
+REMARK minimizedRMSD -1
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+ROOT
+ATOM      1  O1  BZF d   1       0.792   1.179  -1.097  0.00  0.00    -0.204 OA
+ATOM      2  C2  BZF d   1       0.386   0.634   0.105  0.00  0.00     0.174 A 
+ATOM      3  C3  BZF d   1      -0.945   0.777   0.270  0.00  0.00    -0.012 A 
+ATOM      4  C3A BZF d   1      -1.413   1.372  -0.944  0.00  0.00    -0.107 A 
+ATOM      5  C4  BZF d   1      -2.648   1.745  -1.392  0.00  0.00     0.055 A 
+ATOM      6  C5  BZF d   1      -2.755   2.365  -2.596  0.00  0.00    -0.016 A 
+ATOM      7  C6  BZF d   1      -1.648   2.631  -3.376  0.00  0.00     0.022 A 
+ATOM      8  C7  BZF d   1      -0.403   2.275  -2.977  0.00  0.00     0.029 A 
+ATOM      9  C7A BZF d   1      -0.296   1.619  -1.775  0.00  0.00     0.058 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
