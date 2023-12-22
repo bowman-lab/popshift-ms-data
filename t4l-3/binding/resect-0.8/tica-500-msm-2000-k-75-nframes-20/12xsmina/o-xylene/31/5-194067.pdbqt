@@ -1,0 +1,17 @@
+MODEL 1
+REMARK minimizedAffinity -5.19374514
+REMARK minimizedRMSD -1
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+ROOT
+ATOM      1  C2' OXE d   1      -0.805   2.311  -1.232  0.00  0.00     0.078 C 
+ATOM      2  C1' OXE d   1      -0.655   0.486   0.895  0.00  0.00     0.078 C 
+ATOM      3  C1  OXE d   1       0.519   0.565  -0.048  0.00  0.00    -0.078 A 
+ATOM      4  C2  OXE d   1       0.418   1.427  -1.113  0.00  0.00    -0.078 A 
+ATOM      5  C3  OXE d   1       1.494   1.579  -1.982  0.00  0.00     0.003 A 
+ATOM      6  C4  OXE d   1       2.618   0.751  -1.870  0.00  0.00    -0.002 A 
+ATOM      7  C5  OXE d   1       2.724  -0.162  -0.816  0.00  0.00    -0.002 A 
+ATOM      8  C6  OXE d   1       1.705  -0.237   0.126  0.00  0.00     0.003 A 
+ENDROOT
+TORSDOF 0
+ENDMDL
