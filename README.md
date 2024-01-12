@@ -66,8 +66,21 @@ You should check out the github page for [PopShift](https://github.com/bowman-la
 - This ragged array is then analyzed using `popshift.py` to obtain extracted score jsons. 
 - The paths of each of these follow the pattern described above for the receptor structures.
 
+### Perform protein conformation and ligand pose analyses
+
+- Scripted using `compare_confs_ref.sh`, which calls `compare_confs_ref.py` on the appropriate data.
+
 ### Create plots for figures
 
-- In general scripts that plot things begin with `plot`, and use matplotlib to get the plotting done.
+In general scripts that plot things begin with `plot`, and use matplotlib to get the plotting done. Here are a list of figures in order of appearance in the paper:
+
+1. Conceptual figure. Made in [inkscape](https://inkscape.org/) with renders from [pymol](https://pymol.org/2/).
+2. Scatter plots of our results versus ITC from [Morton, Baase & Mathews](https://doi.org/10.1021/bi00027a006); created by `plot-3reps-parity-resect-1-4panel.py`
+3. Line plot showing trend in Spearman correlation with dataset size; created by `plot-corr-trend-simlength.py`
+4. Histogram of [ligand spyRMSDs](https://github.com/RMeli/spyrmsd) to holo structures aligned by pocket residues with apo and popshift weights; created by `plot-ligand-rmsds-xtal.py`
+5. Bar plot summarizing spyRMSDs across all ligands; created by `plot-ligand-rmsd-accuracy.py`
+6. Valine 111's $\chi _1$ angle histogrammed across all states with apo and popshift weights; created by `plot-val111-hists.py`
+7. Histogram of C$\alpha$ RMSDs of the pocket residues with apo and popshift weights; created by `plot-rmsd-hists.py`
+8. Cascaded histogram of ligand spyRMSD to holo crystal structures with popshifted weights at increasing ligand concentrations; created by `plot-ligand-rmsds-titration.py`
 
 [^1]: Note that the trajectories are not here because they'd be too large, but I'm trying to find a way to host them.
