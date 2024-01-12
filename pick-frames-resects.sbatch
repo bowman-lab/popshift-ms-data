@@ -4,7 +4,7 @@
 #SBATCH -o pick-frames-resects.out
 #SBATCH -p all
 
-frame_picker=~/raid/software/MSM-docking/pick_align_frames.py
+frame_picker=~/raid/software/PopShift/pick_align_frames.py
 for rep in {1..3}; do
     for k in 75; do
         for lag in 500; do
