@@ -35,7 +35,7 @@ You should check out the github page for [PopShift](https://github.com/bowman-la
 
 ### Extract frames from a simulation dataset with accompanying MSM
 
-- Use `pick_align_frames.py` to rifle through each simulation dataset and extract frames for docking.
+- Use `pick_align_frames.py` as driven by `pick-frames-resects.sbatch` to rifle through each simulation dataset and each discretized trajectory to extract frames for docking.
 - Each dataset was truncated by multiple resect factors (see Fig 3 from paper)--0.2, 0.4, 0.6, 0.8, and 1.0. Each truncation was done by taking the first y frames of the trajectory, where y is trajectory length times the resect factor. Frames were extracted independently at random.
 - each extraction was organized by state index from clustering the aforementioned trajectories.
 - Multiple extrations were performed on some resects to test the impact of extracting different numbers of frames per state.
@@ -48,15 +48,16 @@ You should check out the github page for [PopShift](https://github.com/bowman-la
 
 ### Prepare these files for docking
 
-- script uses gnu [`parallel`](https://www.gnu.org/software/parallel/) to orchestrate calling `prepare_receptor.py` from the autodock vina conda package on all receptor files.
+- `prepare-resect-receptors.sbatch` uses gnu [`parallel`](https://www.gnu.org/software/parallel/) to orchestrate calling `prepare_receptor.py` from the autodock vina conda package on all receptor files.
 
 ### Dock to these frames using [smina](https://github.com/mwojcikowski/smina)
 
-- The orchestration of this multitude of docking jobs is done by `dock-t4l-resects.sbatch`
+- The orchestration of these docking jobs is done by `dock-t4l-resects.sbatch`
 - docked poses can be found in a directory structure that matches that of the cognate conformation in `receptor`.
-  - The cognate pose to the receptor conformation discussed [above](#extract-frames-from-a-simulation-dataset-with-accompanying-msm) would be: `t4l-3/binding/resect-1.0/tica-500-msm-2000-k-75-nframes-20/12xsmina/0/1-332501.pdb`
+  - The cognate pose to the receptor conformation discussed [above](#extract-frames-from-a-simulation-dataset-with-accompanying-msm) would be: `t4l-3/binding/resect-1.0/tica-500-msm-2000-k-75-nframes-20/12xsmina/0/1-332501.pdbqt` and only contains the coordinates of the ligand.
+  - Thus, visualizing or inspecting the intact complex would require both files.
   - Note that `12xsmina` is a nickname given to the docking run used in the paper because it was performed with a 12 angstrom box centered at 0,0,0 with smina.
-  - Because the alignment process pick-
+    - Because the alignment process centers the selection (in this case the pocket) at **0**, that is usually a good choice for box center.
 
 ### Process the docking scores
 
@@ -66,5 +67,7 @@ You should check out the github page for [PopShift](https://github.com/bowman-la
 - The paths of each of these follow the pattern described above for the receptor structures.
 
 ### Create plots for figures
+
+- In general scripts that plot things begin with `plot`, and use matplotlib to get the plotting done.
 
 [^1]: Note that the trajectories are not here because they'd be too large, but I'm trying to find a way to host them.
